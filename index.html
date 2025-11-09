@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Toggle Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-light">
+    <main class="app">
+      <header class="app__header">
+        <h1>Theme Toggle Demo</h1>
+        <label class="toggle" aria-label="Toggle between dark and light theme">
+          <input type="checkbox" id="themeToggle" aria-live="polite" />
+          <span class="toggle__track" aria-hidden="true">
+            <span class="toggle__thumb"></span>
+          </span>
+          <span class="toggle__label" id="themeLabel">Light theme</span>
+        </label>
+      </header>
+      <section class="app__content">
+        <p>
+          Use the switch above to toggle between a light and a dark theme. The choice
+          is stored locally so it persists between visits.
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
